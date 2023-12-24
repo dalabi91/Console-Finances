@@ -141,6 +141,11 @@ console.log(`Total: $${totalProfitLoss}`);
 // The average of the **changes** in Profit/Losses over the entire period.
 console.log(`Average Change: ${averageChange}`);
 
+// The greatest increase in Profit/Losses (date and difference in the amounts) over the entire period.
+console.log(`Greatest Increase in Profits/Losses: ${greatestIncrease.date} ($${greatestIncrease.amount})`);
+
+// The greatest decrease in Profit/Losses (date and difference in the amounts) over the entire period.
+console.log(`Greatest Decrease in Profits/Losses: ${greatestDecrease.date} ($${greatestDecrease.amount})`);
 
 
 
