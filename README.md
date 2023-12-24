@@ -64,7 +64,7 @@ The following animation shows shows how to access the analysis report
 
 ## Analysis Report
 
-![Analysis Result](./images/fianacial%20analysis%20result.png)
+![Analysis Result](./Images/fianacial_analysis%20_result.png)
 
 
 ## Resource
