@@ -87,21 +87,56 @@ var finances = [
   ['Feb-2017', 671099],
 ];
 
-//testing
 
-console.log("Financial Analysis\n---------------");
+//variables initialization
+
+let totalMonths = 0;
+let totalProfitLoss = 0;
+let previousProfitLoss = 0;
+let greatestIncrease = { date: '', amount: 0 };
+let greatestDecrease = { date: '', amount: 0 };
+let totalChange = 0;
+let averageChange = 0;
+
+// var totalMonths = finances.length;
+// console.log("Total months: " + totalMonths);
+
+//Try using for/ifs
+
+for (var [date, profitLoss] of finances) {
+  totalMonths++;
+  totalProfitLoss += profitLoss;
+
+  if (previousProfitLoss !== 0) {
+    let change = profitLoss - previousProfitLoss;
+    totalChange += change;
+
+    if (change > greatestIncrease.amount) {
+      greatestIncrease = { date, amount: change };
+    } else if (change < greatestDecrease.amount) {
+      greatestDecrease = { date, amount: change };
+    }
+  }
+
+  previousProfitLoss = profitLoss;
+}
+
+// Round to 2 d.p.
+averageChange = Math.round(((totalChange / (totalMonths - 1)) + Number.EPSILON) * 100) / 100; 
+
+
+//CONSOLE.LOGS
+//title
+console.log("Financial Analysis\n--------------------");
 
 // The total number of months included in the dataset.
-
-var totalMonths = finances.length;
-console.log("Total months: " + totalMonths);
+console.log(`Total Months: ${totalMonths}`);
 
 // The net total amount of Profit/Losses over the entire period.
+console.log(`Total: $${totalProfitLoss}`);
 
-// The average of the **changes** in Profit/Losses over the entire period.
-//   * You will need to track what the total change in Profit/Losses are from month to month and then find the average.
-//   * (`Total/(Number of months - 1)`)
 
-// The greatest increase in Profit/Losses (date and difference in the amounts) over the entire period.
 
-// The greatest decrease in Profit/Losses (date and difference in the amounts) over the entire period.
+
+
+
