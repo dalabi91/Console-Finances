@@ -88,7 +88,7 @@ var finances = [
 ];
 
 
-//variables initialization
+//Variable Initialization: to store various financial metrics
 
 let totalMonths = 0;
 let totalProfitLoss = 0;
@@ -101,12 +101,14 @@ let averageChange = 0;
 // var totalMonths = finances.length;
 // console.log("Total months: " + totalMonths);
 
-//Try using for/ifs
+//Try using for loop to extract date, profitLoss values fro each month
 
 for (var [date, profitLoss] of finances) {
-  totalMonths++;
-  totalProfitLoss += profitLoss;
+  totalMonths++; //increment the total number of months
+  totalProfitLoss += profitLoss; //accumulate total profit/loss
 
+  //computation in side for loop
+      //check if it not the 1st month, calc the monthly change in profit/loss, update the total change/greatest increase&decrease if applicable 
   if (previousProfitLoss !== 0) {
     let change = profitLoss - previousProfitLoss;
     totalChange += change;
@@ -121,11 +123,12 @@ for (var [date, profitLoss] of finances) {
   previousProfitLoss = profitLoss;
 }
 
-// Round to 2 d.p.
+// Calculates the average change, rounding it to two decimal places.
 averageChange = Math.round(((totalChange / (totalMonths - 1)) + Number.EPSILON) * 100) / 100; 
 
 
-//CONSOLE.LOGS
+//Outputs the financial analysis results to the console.
+
 //title
 console.log("Financial Analysis\n--------------------");
 
