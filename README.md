@@ -58,8 +58,11 @@ i also spent some time doing research of best methods of calculation to use.
 
 This webpage can be accessed by [**clicking here**](https://dalabi91.github.io/Console-Finances/)
 
+The following animation shows shows how to access the analysis report
 
-[![Usage demo]](./Images/Usage_Demo.mp4)
+![Usage demo](./Images/Usage_Demo.gif)
+
+## Analysis Report
 
 ![Analysis Result](./images/fianacial%20analysis%20result.png)
 
