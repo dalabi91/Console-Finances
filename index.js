@@ -138,6 +138,8 @@ console.log(`Total Months: ${totalMonths}`);
 // The net total amount of Profit/Losses over the entire period.
 console.log(`Total: $${totalProfitLoss}`);
 
+// The average of the **changes** in Profit/Losses over the entire period.
+console.log(`Average Change: ${averageChange}`);
 
 
 
