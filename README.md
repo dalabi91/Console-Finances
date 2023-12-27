@@ -4,7 +4,7 @@
 ## Overview
 
 Welcome!
- This repo  ia have used my my newly learnt java skills along side some personal knowledge research to create code for analyzing the financial records of a company. For this analysis, a financial dataset file has was provided.
+ This repo  ia have used my my newly learnt Java skills along side some personal knowledge research to create code for analyzing the financial records of a company. For this analysis, a financial dataset file has was provided.
 
 
 ## Project Goals

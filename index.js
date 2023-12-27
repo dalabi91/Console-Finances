@@ -101,7 +101,7 @@ let averageChange = 0;
 // var totalMonths = finances.length;
 // console.log("Total months: " + totalMonths);
 
-//Try using for loop to extract date, profitLoss values fro each month
+//Try using For loop to extract date, profitLoss values for each month
 
 for (var [date, profitLoss] of finances) {
   totalMonths++; //increment the total number of months
