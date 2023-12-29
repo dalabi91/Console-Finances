@@ -101,31 +101,35 @@ let averageChange = 0;
 // var totalMonths = finances.length;
 // console.log("Total months: " + totalMonths);
 
-//Try using For loop to extract date, profitLoss values for each month
+//Perform calculations using for loop
 
 for (var [date, profitLoss] of finances) {
   totalMonths++; //increment the total number of months
   totalProfitLoss += profitLoss; //accumulate total profit/loss
 
-  //computation in side for loop
-      //check if it not the 1st month, calc the monthly change in profit/loss, update the total change/greatest increase&decrease if applicable 
+  // Check if it's not the 1st month, calculate the monthly change in profit/loss
   if (previousProfitLoss !== 0) {
+    // Update total change
     let change = profitLoss - previousProfitLoss;
     totalChange += change;
 
+    // Update greatest increase and decrease
     if (change > greatestIncrease.amount) {
       greatestIncrease = { date, amount: change };
     } else if (change < greatestDecrease.amount) {
       greatestDecrease = { date, amount: change };
     }
   }
-
   previousProfitLoss = profitLoss;
 }
 
-// Calculates the average change, rounding it to two decimal places.
-averageChange = Math.round(((totalChange / (totalMonths - 1)) + Number.EPSILON) * 100) / 100; 
+// Calculates the average change
 
+averageChange = totalChange / (finances.length - 1);
+
+//rounding it to two decimal places.
+
+averageChange = Math.round(averageChange * 100) / 100;
 
 //Outputs the financial analysis results to the console.
 
@@ -147,6 +151,4 @@ console.log(`Greatest Increase in Profits/Losses: ${greatestIncrease.date} ($${g
 // The greatest decrease in Profit/Losses (date and difference in the amounts) over the entire period.
 console.log(`Greatest Decrease in Profits/Losses: ${greatestDecrease.date} ($${greatestDecrease.amount})`);
 
-
-
-
+//In summary, this code calculates and logs the total number of months, total profit/loss, average change, and the months with the greatest increase and decrease in profits/losses based on the given financial dataset.

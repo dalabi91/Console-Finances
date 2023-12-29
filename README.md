@@ -4,7 +4,7 @@
 ## Overview
 
 Welcome!
- This repo  ia have used my my newly learnt Java skills along side some personal knowledge research to create code for analyzing the financial records of a company. For this analysis, a financial dataset file has was provided.
+ This repo  ia have used my my newly learnt Java skills along side some personal knowledge research to create code for analyzing the financial records of a company. For this analysis, a financial dataset file has was provided. In summary, this code calculates and logs the total number of months, total profit/loss, average change, and the months with the greatest increase and decrease in profits/losses based on the given financial dataset.
 
 
 ## Project Goals
