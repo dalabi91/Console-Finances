@@ -4,12 +4,12 @@
 ## Overview
 
 Welcome!
- This repo  ia have used my my newly learnt Java skills along side some personal knowledge research to create code for analyzing the financial records of a company. For this analysis, a financial dataset file has was provided. In summary, this code calculates and logs the total number of months, total profit/loss, average change, and the months with the greatest increase and decrease in profits/losses based on the given financial dataset.
+ In this repo,  I have used my newly learned Java skills alongside some personal knowledge research to create code for analyzing the financial records of a company. For this analysis, a financial dataset file has was provided. In summary, this code calculates and logs the total number of months, total profit/loss, average change, and the months with the greatest increase and decrease in profits/losses based on the given financial dataset.
 
 
 ## Project Goals
 
-The primary goal for this project  is to have a resulting analysis should look similar to the following printed to teh console:
+The primary goal for this project  is to have a resulting analysis that looks similar to the following printed to the console:
 
   ```text
   Financial Analysis 
@@ -48,17 +48,17 @@ The primary goal for this project  is to have a resulting analysis should look s
 ## Getting started
 
 ### Prerequisites
-Before starting this project, i made sure i familiarize myself with the acceptance criteria and understood the requirement.
+Before starting this project, I made sure I familiarized myself with the acceptance criteria and understood the requirements.
 
-I also made sure asset were in the correct folder. 
+I also made sure the assets were in the correct folder. 
 
-i also spent some time doing research of best methods of calculation to use.
+I also spent some time researching the best methods of calculation to use.
 
 ## Usage
 
 This webpage can be accessed by [**clicking here**](https://dalabi91.github.io/Console-Finances/)
 
-The following animation shows shows how to access the analysis report
+The following animation shows how to access the analysis report
 
 ![Usage demo](./Images/Usage_Demo.gif)
 
